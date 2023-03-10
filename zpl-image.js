@@ -428,7 +428,7 @@ function crc16(s) {
 	let j, i;
 
 	for (let i = 0; i < s.length; i++) {
-		c = s.charCodeAt(i);
+		const c = s.charCodeAt(i);
 		if (c > 255) {
 			throw new RangeError();
 		}
